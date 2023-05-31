@@ -1,3 +1,5 @@
+package Main;
+
 import java.util.Scanner;
 
 public class MENU {
@@ -52,9 +54,8 @@ public class MENU {
             System.out.println("Selecione uma opção que você deseja saber:");
             System.out.println("1. Otimização do ambiente");
             System.out.println("2. Gerenciamento de recursos");
-            System.out.println("3. Cultivo personalizado");
-            System.out.println("4. Monitoramento e detecção de pragas e doenças");
-            System.out.println("5. Planejamento e tomada de decisão");
+            System.out.println("3. Monitoramento ");
+            System.out.println("4. Planejamento e tomada de decisão");
             System.out.println("0. Sair");
 
             opcao = scanner.nextInt();
@@ -68,12 +69,9 @@ public class MENU {
                     System.out.println("O gerenciamento de recursos na agricultura vertical inclui a gestão eficiente de água, nutrientes e energia para garantir a sustentabilidade e maximizar a produção.");
                     break;
                 case 3:
-                    System.out.println("O cultivo personalizado na agricultura vertical permite ajustar as condições de crescimento para atender às necessidades específicas de diferentes culturas, aumentando assim a produtividade.");
+                    System.out.println("O monitoramento  na agricultura vertical são realizados por meio de sensores e algoritmos de IA para identificar problemas de saúde das plantas e tomar medidas corretivas.");
                     break;
                 case 4:
-                    System.out.println("O monitoramento e a detecção de pragas e doenças na agricultura vertical são realizados por meio de sensores e algoritmos de IA para identificar problemas de saúde das plantas e tomar medidas corretivas.");
-                    break;
-                case 5:
                     System.out.println("O planejamento e a tomada de decisão na agricultura vertical podem ser aprimorados com a IA, que analisa dados e fornece insights para otimizar a produção e tomar decisões mais informadas.");
                     break;
                 case 0:
