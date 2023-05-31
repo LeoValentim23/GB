@@ -7,7 +7,7 @@ public class MENU {
 
         System.out.println("Bem-vindo à ONG!");
 
-        do {
+        while (true) {
             System.out.println("Selecione o que você deseja:");
             System.out.println("1. Doação");
             System.out.println("2. Objetivos");
@@ -25,15 +25,13 @@ public class MENU {
                     break;
                 case 0:
                     System.out.println("Obrigado por utilizar o sistema da ONG!");
-                    break;
+                    scanner.close();
+                    return;
                 default:
                     System.out.println("Opção inválida. Por favor, selecione uma opção válida.");
                     break;
             }
-
-        } while (opcao != 0);
-
-        scanner.close();
+        }
     }
 
     public static void realizarDoacao(Scanner scanner) {
@@ -50,7 +48,7 @@ public class MENU {
     public static void exibirObjetivos(Scanner scanner) {
         int opcao;
 
-        do {
+        while (true) {
             System.out.println("Selecione uma opção que você deseja saber:");
             System.out.println("1. Otimização do ambiente");
             System.out.println("2. Gerenciamento de recursos");
@@ -79,15 +77,12 @@ public class MENU {
                     System.out.println("O planejamento e a tomada de decisão na agricultura vertical podem ser aprimorados com a IA, que analisa dados e fornece insights para otimizar a produção e tomar decisões mais informadas.");
                     break;
                 case 0:
-                    break;
+                    return;
                 default:
                     System.out.println("Opção inválida. Por favor, selecione uma opção válida.");
                     break;
             }
-
-        } while (opcao != 0);
+        }
     }
 }
-
-
 
