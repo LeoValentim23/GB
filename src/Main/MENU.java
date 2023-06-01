@@ -64,21 +64,56 @@ public class MENU {
             switch (opcao) {
                 case 1:
                     System.out.println("A otimização do ambiente na agricultura vertical envolve o controle de luz, temperatura, umidade e outros fatores para criar condições ideais de crescimento das plantas.");
-                    break;
-                case 2:
-                    System.out.println("O gerenciamento de recursos na agricultura vertical inclui a gestão eficiente de água, nutrientes e energia para garantir a sustentabilidade e maximizar a produção.");
-                    break;
-                case 3:
-                    System.out.println("O monitoramento  na agricultura vertical são realizados por meio de sensores e algoritmos de IA para identificar problemas de saúde das plantas e tomar medidas corretivas.");
-                    break;
-                case 4:
-                    System.out.println("O planejamento e a tomada de decisão na agricultura vertical podem ser aprimorados com a IA, que analisa dados e fornece insights para otimizar a produção e tomar decisões mais informadas.");
-                    break;
-                case 0:
-                    return;
-                default:
-                    System.out.println("Opção inválida. Por favor, selecione uma opção válida.");
-                    break;
+                    System.out.println("Qual alimento voce deseja:");
+                    while (true) {
+                        System.out.println("1. Morango");
+                        System.out.println("2. Uva");
+                        System.out.println("3. Alface");
+
+                        int alimento = scanner.nextInt();
+
+                        System.out.println("Quantos celsus?");
+                        int celsus = scanner.nextInt();
+
+
+                        if (celsus > 10 && alimento) {
+                            System.out.println("Alimento aprovado.");
+                        } else {
+                            System.out.println("Alimento NÃO aprovado.");
+                        }
+
+
+                        if (celsus < 300 && morango) {
+                            System.out.println("Alimento aprovado.");
+                        } else {
+                            System.out.println("Alimento NÃO aprovado.");
+                        }
+
+                        if (tombado == 1 && morango) {
+                            System.out.println("Alimento aprovado");
+                        } else {
+                            System.out.println("Alimento NÃO aprovado");
+                        }
+                        break;
+
+                        case 2:
+                            System.out.println("O gerenciamento de recursos na agricultura vertical inclui a gestão eficiente de água, nutrientes e energia para garantir a sustentabilidade e maximizar a produção.");
+                            break;
+
+                        case 3:
+                            System.out.println("O monitoramento  na agricultura vertical são realizados por meio de sensores e algoritmos de IA para identificar problemas de saúde das plantas e tomar medidas corretivas.");
+                            break;
+
+                        case 4:
+                            System.out.println("O planejamento e a tomada de decisão na agricultura vertical podem ser aprimorados com a IA, que analisa dados e fornece insights para otimizar a produção e tomar decisões mais informadas.");
+                            break;
+
+                        case 0:
+                            return;
+                        default:
+                            System.out.println("Opção inválida. Por favor, selecione uma opção válida.");
+                            break;
+                    }
             }
         }
     }
